@@ -6,6 +6,6 @@ target 'Flixster' do
   use_frameworks!
 
   # Pods for Flixster
-  pod "AlamofireImage"
+  pod 'AlamofireImage'
 
 end
