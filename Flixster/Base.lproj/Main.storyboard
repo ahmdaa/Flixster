@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" id="Q71-OU-ONg" customClass="MovieCell" customModule="flixster" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" id="Q71-OU-ONg" customClass="MovieCell" customModule="Flixster" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q71-OU-ONg" id="Yse-SQ-whx">
@@ -65,6 +65,7 @@
                                             <outlet property="posterView" destination="pth-wq-0Gp" id="1JI-gL-IKn"/>
                                             <outlet property="synopsisLabel" destination="Qqz-Y9-T92" id="pxW-7Q-cEP"/>
                                             <outlet property="titleLabel" destination="iKn-Xb-EPt" id="EDv-Og-Pg0"/>
+                                            <segue destination="W00-LS-Kl3" kind="show" id="9Yd-gc-vOv"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -86,7 +87,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="733.60000000000002" y="72.413793103448285"/>
+            <point key="canvasLocation" x="633" y="73"/>
+        </scene>
+        <!--Movie Details View Controller-->
+        <scene sceneID="bNT-Hw-TQy">
+            <objects>
+                <viewController id="W00-LS-Kl3" customClass="MovieDetailsViewController" customModule="Flixster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0gt-Zf-76a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="W2I-AJ-Dod"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ROu-IS-G8p"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TIo-ty-lVG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1425" y="73"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="d3V-Xc-c1g">
