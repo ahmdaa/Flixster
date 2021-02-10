@@ -138,6 +138,18 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yza-Ek-Jpy">
+                                <rect key="frame" x="16" y="180" width="105" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uHb-5x-sGs" kind="presentation" modalPresentationStyle="automatic" id="OB0-D6-a8l"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="W2I-AJ-Dod"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -152,7 +164,60 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TIo-ty-lVG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-204" y="1598"/>
+            <point key="canvasLocation" x="-204" y="1597.1514242878561"/>
+        </scene>
+        <!--Movie Trailer View Controller-->
+        <scene sceneID="Alq-2M-E3o">
+            <objects>
+                <viewController id="uHb-5x-sGs" customClass="MovieTrailerViewController" customModule="Flixster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LTJ-AM-Z9e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwG-Ck-RBG">
+                                <rect key="frame" x="329" y="20" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="xmark.rectangle.portrait.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="close:" destination="uHb-5x-sGs" eventType="touchUpInside" id="a5x-1R-2wX"/>
+                                </connections>
+                            </button>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7xH-0Z-8xC">
+                                <rect key="frame" x="16" y="201" width="343" height="245"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration" allowsInlineMediaPlayback="YES">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" video="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Trailer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2i-KA-sMi">
+                                <rect key="frame" x="98" y="140" width="179" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="s5O-6U-CnE"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="7xH-0Z-8xC" firstAttribute="top" secondItem="q2i-KA-sMi" secondAttribute="bottom" constant="25" id="59o-zZ-yPC"/>
+                            <constraint firstItem="s5O-6U-CnE" firstAttribute="trailing" secondItem="7xH-0Z-8xC" secondAttribute="trailing" constant="16" id="QU0-kI-udr"/>
+                            <constraint firstItem="s5O-6U-CnE" firstAttribute="bottom" secondItem="7xH-0Z-8xC" secondAttribute="bottom" constant="201" id="c0g-UL-qFy"/>
+                            <constraint firstItem="q2i-KA-sMi" firstAttribute="leading" secondItem="s5O-6U-CnE" secondAttribute="leading" constant="98" id="mIY-lZ-LEY"/>
+                            <constraint firstItem="q2i-KA-sMi" firstAttribute="top" secondItem="s5O-6U-CnE" secondAttribute="top" constant="140" id="pti-LM-eOX"/>
+                            <constraint firstItem="7xH-0Z-8xC" firstAttribute="leading" secondItem="s5O-6U-CnE" secondAttribute="leading" constant="16" id="uKu-Wc-nGy"/>
+                            <constraint firstItem="s5O-6U-CnE" firstAttribute="trailing" secondItem="q2i-KA-sMi" secondAttribute="trailing" constant="98" id="xKg-YC-ecu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="7xH-0Z-8xC" id="tcc-kX-9R8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qdK-8O-l0U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-204" y="2342"/>
         </scene>
         <!--Now Playing-->
         <scene sceneID="d3V-Xc-c1g">
@@ -252,6 +317,10 @@
     <resources>
         <image name="now_playing_tabbar_item" width="21" height="21"/>
         <image name="superhero_tabbar_item" width="21" height="23"/>
+        <image name="xmark.rectangle.portrait.fill" catalog="system" width="115" height="128"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
