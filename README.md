@@ -15,8 +15,9 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 - [x] (2pts) In the detail view, when the user taps the poster, a new screen is presented modally where they can view the trailer.
 
 ### App Walkthrough GIF
+Note: GIF doesn't capture the modal transition correctly so it looks as if the synopsis is under the trailer but that is not actually the case.
 
-<img src="http://g.recordit.co/LiijqDpNnN.gif" width=250><br>
+<img src="http://g.recordit.co/cHM8e9EacL.gif" width=250><br>
 
 ### Notes
 Understanding how to work with WKWebKit required some research.
