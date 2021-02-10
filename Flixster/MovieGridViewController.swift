@@ -25,7 +25,7 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
         layout.minimumLineSpacing = 4
         layout.minimumInteritemSpacing = 4
         
-        let width = (view.frame.size.width - layout.minimumInteritemSpacing * 2) / 3
+        let width = (view.frame.size.width - layout.minimumInteritemSpacing) / 2
         layout.itemSize = CGSize(width: width, height: width * 3 / 2)
 
         let url = URL(string: "https://api.themoviedb.org/3/movie/297762/similar?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")!
@@ -65,14 +65,18 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
         return cell
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    // MARK:- Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+
+        // Find the selected movie
+        let cell = sender as! UICollectionViewCell
+        let indexPath = collectionView.indexPath(for: cell)!
+        
+        let movie = movies[indexPath.row]
+        
+        // Pass the selected movie to the details view controller
+        let detailsViewController = segue.destination as! MovieDetailsViewController
+        detailsViewController.movie = movie
     }
-    */
 
 }
