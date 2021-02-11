@@ -31,7 +31,6 @@ class MovieTrailerViewController: UIViewController {
            } else if let data = data {
               let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
             
-              // print(dataDictionary["results"] ?? "Null")
               self.movieVideos = dataDictionary["results"] as! [[String:Any]]
             
               if(self.movieVideos.count > 0) {
