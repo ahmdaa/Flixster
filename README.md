@@ -39,7 +39,8 @@ Understanding how to work with WKWebKit required some research.
 
 ### App Walkthrough GIF
 
-<img src="http://g.recordit.co/4u3rJn2xDK.gif" width=250><br>
+<img src="http://g.recordit.co/XcNPughy9v.gif" width=250><br>
+<img src="http://g.recordit.co/0H6hlXyA5r.gif" width=250><br>
 
 ### Notes
 No challenges really. Setting up auto layout correctly just took some time but more practice should help.
