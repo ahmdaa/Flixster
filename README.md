@@ -39,8 +39,11 @@ Understanding how to work with WKWebKit required some research.
 
 ### App Walkthrough GIF
 
-<img src="http://g.recordit.co/XcNPughy9v.gif" width=150><br>
-<img src="http://g.recordit.co/0H6hlXyA5r.gif" width=150><br>
+<p float="left">
+  <img src="http://g.recordit.co/XcNPughy9v.gif" width="250" />
+  <img src="http://g.recordit.co/0H6hlXyA5r.gif" width="250" /> 
+</p>
+
 <img src="http://g.recordit.co/5Yy0I2BUL1.gif" width=400><br>
 
 ### Notes
